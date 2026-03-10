@@ -2,8 +2,12 @@
 
 @theme {
  
-  --color-site: oklch(87.2% 0.01 258.338);
+  --color-site: #fcfdfe;
   --color-primary-600: oklch(44.617% 0.17879 263.23);
   --color-primary: oklch(52.986% 0.20551 263.33);
 
+}
+
+@utility wrapper {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
