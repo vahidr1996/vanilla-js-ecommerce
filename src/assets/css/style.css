@@ -4,7 +4,9 @@
  
   --color-site: #fcfdfe;
   --color-primary-600: oklch(44.617% 0.17879 263.23);
+  --color-primary-500: oklch(52.986% 0.20551 263.33);
   --color-primary: oklch(52.986% 0.20551 263.33);
+  --color-primary-50: oklch(87.605% 0.04819 267.18);
 
 }
 
