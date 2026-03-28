@@ -1,40 +1,53 @@
 @import "tailwindcss";
 
 @theme {
-   --font-sans: "Vazir", sans-serif;
+  --font-sans: "Vazir", sans-serif;
 
   --color-site: #fcfdfe;
   --color-primary-600: oklch(44.617% 0.17879 263.23);
   --color-primary-500: oklch(52.986% 0.20551 263.33);
   --color-primary: oklch(52.986% 0.20551 263.33);
   --color-primary-50: oklch(87.605% 0.04819 267.18);
-
 }
 
 @utility wrapper {
   @apply max-w-[1440px] mx-auto px-2 sm:px-3 lg:px-4;
 }
 
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px; 
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6; 
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #d1d5db; 
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af; 
+}
 
 @font-face {
-  font-family: 'Vazir';
-  src: url('/src/assets/fonts/Vazir.woff2') format('woff2');
+  font-family: "Vazir";
+  src: url("/src/assets/fonts/Vazir.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Vazir';
-  src: url('/src/assets/fonts/Vazir-Medium.woff2') format('woff2');
+  font-family: "Vazir";
+  src: url("/src/assets/fonts/Vazir-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Vazir';
-  src: url('/src/assets/fonts/Vazir-Bold.woff2') format('woff2');
+  font-family: "Vazir";
+  src: url("/src/assets/fonts/Vazir-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
