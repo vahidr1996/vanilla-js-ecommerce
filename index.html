@@ -872,10 +872,81 @@
       <!-- GOLDEN TIME OFFERS SECTION -->
       <section class="wrapper mt-16">
         <div
-          class="flex gap-8 bg-linear-to-tr from-slate-50 via-white to-red-50 rounded-[3rem] p-8"
+          class="flex gap-8 bg-linear-to-tr from-slate-50 via-white to-red-50 border border-white rounded-[3rem] p-12"
         >
           <!-- Right Column: JS Timer & Actions -->
-          <div class="flex-1"></div>
+          <div class="flex-1 flex flex-col items-start gap-8">
+            <div class="flex items-center gap-3">
+              <span class="relative flex w-4 h-4">
+                <span
+                  class="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-75"
+                ></span>
+                <span
+                  class="relative rounded-full w-full h-full bg-red-500"
+                ></span>
+              </span>
+
+              <span
+                class="text-red-600 font-black text-[11px] tracking-[0.2rem] uppercase"
+                >special offers</span
+              >
+            </div>
+            <h2 class="text-gray-900 text-5xl font-black leading-14">
+              تایم <br />
+              <span class="relative inline-block">
+                <span
+                  class="absolute bottom-[8px] left-0 w-full bg-rose-200 h-3 -rotate-3"
+                ></span>
+                <span
+                  class="bg-linear-to-l from-red-400 to-red-600 bg-clip-text text-transparent relative z-10"
+                >
+                  طلایی
+                </span>
+              </span>
+            </h2>
+            <p class="text-gray-500 text-sm max-w-2/3 leading-loose">
+              محصولات منتخب با تخفیف‌های باورنکردنی؛ فقط تا پایان زمان
+              باقی‌مانده!
+            </p>
+            <div
+              class="bg-gray-100 p-8 border border-gray-200 rounded-[2.5rem] flex justify-center gap-6 mt-4"
+            >
+              <div class="flex flex-col items-center gap-1">
+                <span class="text-3xl font-black">۴۴</span>
+                <span class="text-[9px] text-gray-500">ثانیه</span>
+              </div>
+              <div class="flex flex-col gap-0.5 pt-3">
+                <span class="w-1 h-1 bg-red-400 animate-pulse"></span>
+                <span class="w-1 h-1 bg-red-400 animate-pulse"></span>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <span class="text-3xl font-black">۲۶</span>
+                <span class="text-[9px] text-gray-500">دقیقه</span>
+              </div>
+              <div class="flex flex-col gap-0.5 pt-3">
+                <span class="w-1 h-1 bg-red-400 animate-pulse"></span>
+                <span class="w-1 h-1 bg-red-400 animate-pulse"></span>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <span class="text-3xl font-black">۱۴</span>
+                <span class="text-[9px] text-gray-500">ساعت</span>
+              </div>
+            </div>
+            <a
+              class="mt-4 px-20 py-4 bg-gray-900 text-white flex items-center justify-center gap-3 rounded-4xl hover:scale-105 transition duration-300"
+              href="#"
+            >
+              <span class="font-black text-sm">مشاهده همه</span>
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
           <!-- Left Column: Draggable Products Slider -->
           <div class="flex-2"></div>
         </div>
