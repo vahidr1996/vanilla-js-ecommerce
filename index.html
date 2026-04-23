@@ -8,268 +8,270 @@
   </head>
   <body class="bg-slate-100">
     <!-- HEADER SECTION -->
-    <header class="w-full z-50">
+    <header class="sticky top-0 z-50 flex flex-col">
       <!-- Top Promotional Banner -->
       <div
-        class="py-1.5 bg-slate-900 text-xs flex items-center justify-center gap-1"
+        class="py-1.5 bg-slate-900 text-[11px] tracking-tighter flex items-center justify-center gap-1"
       >
         <p class="text-white">
           🎉 جشنواره زمستانی: تا ۵۰٪ تخفیف روی تمام محصولات دیجیتال | کد تخفیف:
         </p>
-        <span class="text-red-400">WINTER2025</span>
+        <span class="text-red-400 uppercase">winter2025</span>
       </div>
 
-      <div class="sticky top-0 z-50">
-        <!-- Top Header -->
-        <div class="bg-site/80 backdrop-blur-md">
-          <div class="wrapper flex justify-between items-center gap-8 h-20">
-            <a href="/" class="w-30">
-              <img
-                class="w-full"
-                src="src/assets/images/logo.png"
-                alt="فروشگاه اینترنتی مانا"
-              />
-            </a>
-            <!-- Limit max-width to prevent the flex-1 search bar from stretching too wide on large monitors -->
+      <!-- Top Header -->
+      <div class="bg-site/80 backdrop-blur-xl">
+        <div class="wrapper flex justify-between items-center gap-8 h-20">
+          <a href="/" class="w-30">
+            <img
+              class="w-full"
+              src="src/assets/images/logo.png"
+              alt="فروشگاه اینترنتی مانا"
+            />
+          </a>
+          <!-- Limit max-width to prevent the flex-1 search bar from stretching too wide on large monitors -->
 
-            <div
-              class="flex items-center max-w-4xl flex-1 h-14 bg-gray-200/60 shadow-md border border-transparent has-[input:focus]:border-blue-500 has-[input:focus]:ring-4 has-[input:focus]:ring-blue-500/40 has-[input:focus]:bg-white rounded-2xl"
-            >
-              <div class="w-10 ps-1 flex items-center justify-center">
-                <svg
-                  class="w-5 h-5 stroke-gray-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    stroke-width="2.5"
-                  ></path>
-                </svg>
-              </div>
-
-              <input
-                type="text"
-                placeholder="جستجوی سراسری در محصولات ..."
-                class="flex-1 px-1 outline-none placeholder:text-sm placeholder:font-bold placeholder:text-gray-500"
-              />
-
-              <div
-                class="w-40 flex items-center justify-center border-s border-gray-300/60"
-              >
-                <button
-                  class="flex items-center justify-center gap-2 shadow-md rounded-xl bg-white px-3 py-2 text-xs font-extrabold cursor-pointer border border-transparent transition duration-300 hover:border-primary group"
-                >
-                  <div
-                    class="bg-gray-200/60 p-1 rounded-md group-hover:bg-primary group-hover:text-white"
-                  >
-                    <svg
-                      class="w-3.5 h-3.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="3"
-                        d="M15 19l-7-7 7-7"
-                      ></path>
-                    </svg>
-                  </div>
-                  آرشیو محصولات
-                </button>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3">
-              <button
-                class="flex items-center justify-center p-2.5 rounded-xl shadow-sm cursor-pointer bg-white hover:border-primary-500/50 border border-transparent transition duration-300 group"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-600 group-hover:text-primary-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-gray-700 bg-white shadow-sm text-xs cursor-pointer font-black border border-transparent hover:bg-primary-50/50 hover:border-primary-500/50 transition duration-300 group"
-              >
-                <svg
-                  class="w-5 h-5 text-gray-600 group-hover:text-primary-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.8"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  ></path>
-                </svg>
-                ورود یا ثبت‌نام
-              </button>
-              <button
-                class="relative flex justify-center items-center p-2.5 rounded-xl cursor-pointer bg-rose-100/50 border border-rose-400/50 hover:bg-rose-500 shadow-sm transition duration-300 group"
-              >
-                <svg
-                  class="w-6 h-6 text-rose-500 group-hover:text-white transition-colors"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.8"
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                  ></path>
-                </svg>
-                <span
-                  class="flex justify-center items-center bg-primary-600 text-white text-xs font-bold w-5 h-5 rounded-lg border-2 border-white absolute -top-2 -right-2"
-                >
-                  ۲
-                  <span class="sr-only">آیتم در سبد خرید</span>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Header -->
-        <div class="bg-white shadow-md border-t border-gray-100">
-          <div class="wrapper flex justify-between items-center py-3">
-            <nav>
-              <ul class="flex items-center gap-8">
-                <li class="text-sm font-bold text-gray-700">
-                  <a
-                    href="#"
-                    class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-5"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                      ></path>
-                    </svg>
-                    مگاتب منو</a
-                  >
-                </li>
-                <li class="text-sm text-gray-600">
-                  <a
-                    href="#"
-                    class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300"
-                  >
-                    مگالیست منو
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <li class="text-sm text-gray-700">
-                  <a
-                    href="#"
-                    class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300"
-                  >
-                    منوآبشاری
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <li class="text-sm text-gray-700">
-                  <a
-                    href="#"
-                    class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300 group"
-                    ><span
-                      class="w-1.5 h-1.5 bg-rose-500 rounded-full animate-pulse group-hover:scale-125 transition-transform"
-                      aria-hidden="true"
-                    ></span>
-                    شگفت انگیزها</a
-                  >
-                </li>
-                <li class="text-sm text-gray-700">
-                  <a
-                    href="#"
-                    class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300 group"
-                  >
-                    پرفروش ترین ها</a
-                  >
-                </li>
-                <li class="text-sm text-gray-700">
-                  <a
-                    href="#"
-                    class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300 group"
-                  >
-                    وبلاگ</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            <button
-              class="flex items-center gap-x-2 border-r border-gray-200 pr-4 cursor-pointer group"
-            >
+          <div
+            class="flex items-center max-w-4xl flex-1 h-14 bg-gray-100 shadow-md border border-transparent has-[input:focus]:border-blue-500 has-[input:focus]:ring-4 has-[input:focus]:ring-blue-500/40 has-[input:focus]:bg-white rounded-2xl"
+          >
+            <div class="w-10 ps-2 flex items-center justify-center">
               <svg
-                class="w-4 h-4 text-rose-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                aria-hidden="true"
+                class="w-5 h-5 stroke-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  stroke-width="2.5"
                 ></path>
               </svg>
-              <div class="flex items-center gap-x-1 text-xs font-bold">
-                <span
-                  class="text-gray-500 group-hover:text-primary-600 transition"
-                  >ارسال به:</span
+            </div>
+
+            <input
+              type="text"
+              placeholder="جستجوی سراسری در محصولات ..."
+              class="flex-1 px-1 outline-none placeholder:text-sm placeholder:font-bold placeholder:text-gray-500"
+            />
+
+            <div
+              class="w-40 flex items-center justify-end pe-2 border-s border-gray-300/60"
+            >
+              <button
+                class="flex items-center justify-center gap-3 shadow-md rounded-xl bg-white px-3.5 py-2 text-[11px] font-black cursor-pointer border border-transparent transition duration-300 hover:border-primary group"
+              >
+                <div
+                  class="bg-gray-200/60 p-1 rounded-md group-hover:bg-primary group-hover:text-white"
                 >
-                <span class="text-gray-700">تهران،سعادت آباد</span>
-              </div>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M15 19l-7-7 7-7"
+                    ></path>
+                  </svg>
+                </div>
+                آرشیو محصولات
+              </button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <button
+              class="flex items-center justify-center p-2.5 rounded-xl shadow-sm cursor-pointer bg-white hover:border-primary-500/50 border border-transparent transition duration-300 group"
+            >
+              <svg
+                class="w-5 h-5 text-gray-600 group-hover:text-primary-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-gray-700 bg-white shadow-sm text-xs cursor-pointer font-black border border-transparent hover:bg-primary-50/50 hover:border-primary-500/50 transition duration-300 group"
+            >
+              <svg
+                class="w-5 h-5 text-gray-600 group-hover:text-primary-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                ></path>
+              </svg>
+              ورود یا ثبت‌نام
+            </button>
+            <button
+              class="relative flex justify-center items-center p-2.5 rounded-xl cursor-pointer bg-rose-100/50 border border-rose-400/50 hover:bg-rose-500 shadow-sm transition duration-300 group"
+            >
+              <svg
+                class="w-6 h-6 text-rose-500 group-hover:text-white transition-colors"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                ></path>
+              </svg>
+              <span
+                class="flex justify-center items-center bg-primary-600 text-white text-xs font-bold w-5 h-5 rounded-lg border-2 border-white absolute -top-2 -right-2"
+              >
+                ۲
+                <span class="sr-only">آیتم در سبد خرید</span>
+              </span>
             </button>
           </div>
+        </div>
+      </div>
+
+      <!-- Bottom Header -->
+      <div
+        class="bg-white/95 backdrop-blur-xl shadow-md border-t border-gray-100"
+      >
+        <div class="wrapper flex justify-between items-center py-3">
+          <nav>
+            <ul class="flex items-center gap-8">
+              <li class="text-sm font-bold text-gray-700">
+                <a
+                  href="#"
+                  class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    ></path>
+                  </svg>
+                  مگاتب منو
+                </a>
+              </li>
+              <li class="text-sm text-gray-600">
+                <a
+                  href="#"
+                  class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300"
+                >
+                  مگالیست منو
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="text-sm text-gray-700">
+                <a
+                  href="#"
+                  class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300"
+                >
+                  منوی آبشاری
+
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="text-sm text-gray-700">
+                <a
+                  href="#"
+                  class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300 group"
+                  ><span
+                    class="w-1.5 h-1.5 bg-rose-500 rounded-full animate-pulse group-hover:scale-125 transition-transform"
+                    aria-hidden="true"
+                  ></span>
+
+                  شگفت‌انگیزها
+                </a>
+              </li>
+              <li class="text-sm text-gray-700">
+                <a
+                  href="#"
+                  class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300 group"
+                >
+                  پرفروش‌ترین‌ها</a
+                >
+              </li>
+              <li class="text-sm text-gray-700">
+                <a
+                  href="#"
+                  class="flex items-center gap-1 py-4 hover:text-primary-500 transition duration-300 group"
+                >
+                  وبلاگ</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="flex items-center gap-x-1 border-r border-gray-200 pr-4 cursor-pointer group"
+          >
+            <svg
+              class="w-4 h-4 text-rose-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <div class="flex items-center gap-x-1 text-xs font-bold">
+              <span
+                class="text-gray-500 group-hover:text-primary-600 transition"
+                >ارسال به:</span
+              >
+              <span class="text-gray-700">تهران،سعادت آباد</span>
+            </div>
+          </button>
         </div>
       </div>
     </header>
