@@ -8,6 +8,16 @@
   --color-primary-500: oklch(52.986% 0.20551 263.33);
   --color-primary: oklch(52.986% 0.20551 263.33);
   --color-primary-50: oklch(87.605% 0.04819 267.18);
+
+  --animate-shine-loop: shine-loop 1.5s linear infinite;
+  @keyframes shine-loop {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    } 
+  }
 }
 
 @utility wrapper {
