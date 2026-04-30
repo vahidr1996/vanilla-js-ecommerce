@@ -4,6 +4,7 @@
   --font-sans: "Vazirmatn", sans-serif;
 
   --color-site: #fcfdfe;
+  --color-primary-700: oklch(35.889% 0.13872 263.41);
   --color-primary-600: oklch(44.617% 0.17879 263.23);
   --color-primary-500: oklch(52.986% 0.20551 263.33);
   --color-primary: oklch(52.986% 0.20551 263.33);
@@ -16,7 +17,7 @@
     }
     100% {
       transform: translateX(100%);
-    } 
+    }
   }
 }
 
