@@ -2060,9 +2060,13 @@
 
             <div class="flex gap-x-7 pt-20 pb-4">
               <article
-                class="relative w-[330px] shrink-0 snap-start overflow-visible rounded-[3rem] bg-white shadow-lg"
+                class="group/card relative w-[330px] shrink-0 snap-start overflow-visible cursor-pointer"
                 aria-label="کارت محصول Galaxy S24 Ultra شماره ۱"
               >
+                <div
+                  aria-hidden="true"
+                  class="absolute inset-0 z-0 rounded-[3rem] bg-white shadow-lg transition-transform duration-500 ease-out group-hover/card:-translate-y-3 will-change-transform"
+                ></div>
                 <span
                   aria-hidden="true"
                   class="absolute -top-12 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-blue-100/60 blur-xl"
@@ -2071,8 +2075,74 @@
                 <img
                   src="src/assets/images/mobile-1.png"
                   alt="Galaxy S24 Ultra"
-                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain"
+                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain group-hover/card:scale-110 transition-transform ease-out duration-500"
                 />
+
+                <div
+                  class="absolute top-1 right-10 z-30 flex -translate-x-4 flex-col gap-3 opacity-0 transition-all duration-500 ease-out group-hover/card:translate-x-0 group-hover/card:opacity-100"
+                  aria-label="عملیات سریع محصول"
+                >
+                  <div
+                    class="group/heart relative flex items-center justify-end"
+                  >
+                    <button
+                      type="button"
+                      aria-label="مشاهده سریع محصول"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-red-500 hover:text-white"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/heart:translate-x-0 group-hover/heart:opacity-100"
+                    >
+                      مشاهده سریع
+                    </span>
+                  </div>
+                  <div class="group/eye relative flex items-center justify-end">
+                    <button
+                      type="button"
+                      aria-label="افزودن محصول به علاقه‌مندی"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-white hover:text-red-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/eye:translate-x-0 group-hover/eye:opacity-100"
+                    >
+                      افزودن به علاقه‌مندی
+                    </span>
+                  </div>
+                </div>
 
                 <span
                   class="z-20 absolute top-8 left-8 -rotate-10 bg-rose-500/90 text-white text-xs font-bold px-2.5 py-1.5 rounded-full shadow-md"
@@ -2080,7 +2150,7 @@
                   ٪۲۵-
                 </span>
 
-                <div class="flex flex-col px-8 pb-8 pt-30">
+                <div class="relative z-10 flex flex-col px-8 pb-8 pt-30">
                   <div class="text-center">
                     <h3 class="text-xl font-black text-gray-900">
                       Galaxy S24 Ultra
@@ -2111,16 +2181,21 @@
 
                   <button
                     type="button"
-                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)]"
+                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)] cursor-pointer transition-colors duration-500 ease-out hover:bg-primary-700"
                   >
                     افزودن به سبد
                   </button>
                 </div>
               </article>
               <article
-                class="relative w-[330px] shrink-0 snap-start overflow-visible rounded-[3rem] bg-white shadow-lg"
+                class="group/card relative w-[330px] shrink-0 snap-start overflow-visible cursor-pointer"
                 aria-label="کارت محصول Galaxy S24 Ultra شماره ۲"
               >
+                <div
+                  aria-hidden="true"
+                  class="absolute inset-0 z-0 rounded-[3rem] bg-white shadow-lg transition-transform duration-500 ease-out group-hover/card:-translate-y-3 will-change-transform"
+                ></div>
+
                 <span
                   aria-hidden="true"
                   class="absolute -top-12 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-blue-100/60 blur-xl"
@@ -2128,8 +2203,74 @@
                 <img
                   src="src/assets/images/mobile-2.png"
                   alt="Galaxy S24 Ultra"
-                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain"
+                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain group-hover/card:scale-110 transition-transform ease-out duration-500"
                 />
+
+                <div
+                  class="absolute top-1 right-10 z-30 flex -translate-x-4 flex-col gap-3 opacity-0 transition-all duration-500 ease-out group-hover/card:translate-x-0 group-hover/card:opacity-100"
+                  aria-label="عملیات سریع محصول"
+                >
+                  <div
+                    class="group/heart relative flex items-center justify-end"
+                  >
+                    <button
+                      type="button"
+                      aria-label="مشاهده سریع محصول"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-red-500 hover:text-white"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/heart:translate-x-0 group-hover/heart:opacity-100"
+                    >
+                      مشاهده سریع
+                    </span>
+                  </div>
+                  <div class="group/eye relative flex items-center justify-end">
+                    <button
+                      type="button"
+                      aria-label="افزودن محصول به علاقه‌مندی"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-white hover:text-red-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/eye:translate-x-0 group-hover/eye:opacity-100"
+                    >
+                      افزودن به علاقه‌مندی
+                    </span>
+                  </div>
+                </div>
 
                 <span
                   class="z-20 absolute top-8 left-8 -rotate-10 bg-rose-500/90 text-white text-xs font-bold px-2.5 py-1.5 rounded-full shadow-md"
@@ -2137,7 +2278,7 @@
                   ٪۲۵-
                 </span>
 
-                <div class="flex flex-col px-8 pb-8 pt-30">
+                <div class="relative z-10 flex flex-col px-8 pb-8 pt-30">
                   <div class="text-center">
                     <h3 class="text-xl font-black text-gray-900">
                       Galaxy S24 Ultra
@@ -2168,16 +2309,20 @@
 
                   <button
                     type="button"
-                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)]"
+                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)] cursor-pointer transition-colors duration-500 ease-out hover:bg-primary-700"
                   >
                     افزودن به سبد
                   </button>
                 </div>
               </article>
               <article
-                class="relative w-[330px] shrink-0 snap-start overflow-visible rounded-[3rem] bg-white shadow-lg"
+                class="group/card relative w-[330px] shrink-0 snap-start overflow-visible cursor-pointer"
                 aria-label="کارت محصول Galaxy S24 Ultra شماره ۳"
               >
+                <div
+                  aria-hidden="true"
+                  class="absolute inset-0 z-0 rounded-[3rem] bg-white shadow-lg transition-transform duration-500 ease-out group-hover/card:-translate-y-3 will-change-transform"
+                ></div>
                 <span
                   aria-hidden="true"
                   class="absolute -top-12 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-blue-100/60 blur-xl"
@@ -2185,8 +2330,74 @@
                 <img
                   src="src/assets/images/mobile-3.png"
                   alt="Galaxy S24 Ultra"
-                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain"
+                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain group-hover/card:scale-110 transition-transform ease-out duration-500"
                 />
+
+                <div
+                  class="absolute top-1 right-10 z-30 flex -translate-x-4 flex-col gap-3 opacity-0 transition-all duration-500 ease-out group-hover/card:translate-x-0 group-hover/card:opacity-100"
+                  aria-label="عملیات سریع محصول"
+                >
+                  <div
+                    class="group/heart relative flex items-center justify-end"
+                  >
+                    <button
+                      type="button"
+                      aria-label="مشاهده سریع محصول"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-red-500 hover:text-white"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/heart:translate-x-0 group-hover/heart:opacity-100"
+                    >
+                      مشاهده سریع
+                    </span>
+                  </div>
+                  <div class="group/eye relative flex items-center justify-end">
+                    <button
+                      type="button"
+                      aria-label="افزودن محصول به علاقه‌مندی"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-white hover:text-red-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/eye:translate-x-0 group-hover/eye:opacity-100"
+                    >
+                      افزودن به علاقه‌مندی
+                    </span>
+                  </div>
+                </div>
 
                 <span
                   class="z-20 absolute top-8 left-8 -rotate-10 bg-rose-500/90 text-white text-xs font-bold px-2.5 py-1.5 rounded-full shadow-md"
@@ -2194,7 +2405,7 @@
                   ٪۲۵-
                 </span>
 
-                <div class="flex flex-col px-8 pb-8 pt-30">
+                <div class="relative z-10 flex flex-col px-8 pb-8 pt-30">
                   <div class="text-center">
                     <h3 class="text-xl font-black text-gray-900">
                       Galaxy S24 Ultra
@@ -2225,16 +2436,20 @@
 
                   <button
                     type="button"
-                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)]"
+                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)] cursor-pointer transition-colors duration-500 ease-out hover:bg-primary-700"
                   >
                     افزودن به سبد
                   </button>
                 </div>
               </article>
               <article
-                class="relative w-[330px] shrink-0 snap-start overflow-visible rounded-[3rem] bg-white shadow-lg"
+                class="group/card relative w-[330px] shrink-0 snap-start overflow-visible cursor-pointer"
                 aria-label="کارت محصول Galaxy S24 Ultra شماره ۴"
               >
+                <div
+                  aria-hidden="true"
+                  class="absolute inset-0 z-0 rounded-[3rem] bg-white shadow-lg transition-transform duration-500 ease-out group-hover/card:-translate-y-3 will-change-transform"
+                ></div>
                 <span
                   aria-hidden="true"
                   class="absolute -top-12 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-blue-100/60 blur-xl"
@@ -2242,8 +2457,73 @@
                 <img
                   src="src/assets/images/mobile-4.png"
                   alt="Galaxy S24 Ultra"
-                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain"
+                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain group-hover/card:scale-110 transition-transform ease-out duration-500"
                 />
+                <div
+                  class="absolute top-1 right-10 z-30 flex -translate-x-4 flex-col gap-3 opacity-0 transition-all duration-500 ease-out group-hover/card:translate-x-0 group-hover/card:opacity-100"
+                  aria-label="عملیات سریع محصول"
+                >
+                  <div
+                    class="group/heart relative flex items-center justify-end"
+                  >
+                    <button
+                      type="button"
+                      aria-label="مشاهده سریع محصول"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-red-500 hover:text-white"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/heart:translate-x-0 group-hover/heart:opacity-100"
+                    >
+                      مشاهده سریع
+                    </span>
+                  </div>
+                  <div class="group/eye relative flex items-center justify-end">
+                    <button
+                      type="button"
+                      aria-label="افزودن محصول به علاقه‌مندی"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-white hover:text-red-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/eye:translate-x-0 group-hover/eye:opacity-100"
+                    >
+                      افزودن به علاقه‌مندی
+                    </span>
+                  </div>
+                </div>
 
                 <span
                   class="z-20 absolute top-8 left-8 -rotate-10 bg-rose-500/90 text-white text-xs font-bold px-2.5 py-1.5 rounded-full shadow-md"
@@ -2251,7 +2531,7 @@
                   ٪۲۵-
                 </span>
 
-                <div class="flex flex-col px-8 pb-8 pt-30">
+                <div class="relative z-10 flex flex-col px-8 pb-8 pt-30">
                   <div class="text-center">
                     <h3 class="text-xl font-black text-gray-900">
                       Galaxy S24 Ultra
@@ -2282,16 +2562,20 @@
 
                   <button
                     type="button"
-                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)]"
+                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)] cursor-pointer transition-colors duration-500 ease-out hover:bg-primary-700"
                   >
                     افزودن به سبد
                   </button>
                 </div>
               </article>
               <article
-                class="relative w-[330px] shrink-0 snap-start overflow-visible rounded-[3rem] bg-white shadow-lg"
+                class="group/card relative w-[330px] shrink-0 snap-start overflow-visible cursor-pointer"
                 aria-label="کارت محصول Galaxy S24 Ultra شماره ۵"
               >
+                <div
+                  aria-hidden="true"
+                  class="absolute inset-0 z-0 rounded-[3rem] bg-white shadow-lg transition-transform duration-500 ease-out group-hover/card:-translate-y-3 will-change-transform"
+                ></div>
                 <span
                   aria-hidden="true"
                   class="absolute -top-12 left-1/2 h-44 w-44 -translate-x-1/2 rounded-full bg-blue-100/60 blur-xl"
@@ -2299,8 +2583,73 @@
                 <img
                   src="src/assets/images/mobile-5.png"
                   alt="Galaxy S24 Ultra"
-                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain"
+                  class="z-10 absolute -top-16 left-1/2 h-40 w-auto -translate-x-1/2 object-contain group-hover/card:scale-110 transition-transform ease-out duration-500"
                 />
+                <div
+                  class="absolute top-1 right-10 z-30 flex -translate-x-4 flex-col gap-3 opacity-0 transition-all duration-500 ease-out group-hover/card:translate-x-0 group-hover/card:opacity-100"
+                  aria-label="عملیات سریع محصول"
+                >
+                  <div
+                    class="group/heart relative flex items-center justify-end"
+                  >
+                    <button
+                      type="button"
+                      aria-label="مشاهده سریع محصول"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-red-500 hover:text-white"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/heart:translate-x-0 group-hover/heart:opacity-100"
+                    >
+                      مشاهده سریع
+                    </span>
+                  </div>
+                  <div class="group/eye relative flex items-center justify-end">
+                    <button
+                      type="button"
+                      aria-label="افزودن محصول به علاقه‌مندی"
+                      class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-slate-900 shadow-lg transition-all duration-500 ease-out hover:bg-white hover:text-red-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span
+                      class="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 translate-y-[-50%] translate-x-2 whitespace-nowrap rounded-lg bg-slate-950 px-2.5 py-1.5 text-[9px] font-bold text-white opacity-0 shadow-lg transition-all duration-300 ease-out group-hover/eye:translate-x-0 group-hover/eye:opacity-100"
+                    >
+                      افزودن به علاقه‌مندی
+                    </span>
+                  </div>
+                </div>
 
                 <span
                   class="z-20 absolute top-8 left-8 -rotate-10 bg-rose-500/90 text-white text-xs font-bold px-2.5 py-1.5 rounded-full shadow-md"
@@ -2308,7 +2657,7 @@
                   ٪۲۵-
                 </span>
 
-                <div class="flex flex-col px-8 pb-8 pt-30">
+                <div class="relative z-10 flex flex-col px-8 pb-8 pt-30">
                   <div class="text-center">
                     <h3 class="text-xl font-black text-gray-900">
                       Galaxy S24 Ultra
@@ -2339,7 +2688,7 @@
 
                   <button
                     type="button"
-                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)]"
+                    class="mt-3 w-full rounded-2xl bg-primary py-4 font-black text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)] cursor-pointer transition-colors duration-500 ease-out hover:bg-primary-700"
                   >
                     افزودن به سبد
                   </button>
