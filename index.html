@@ -2731,6 +2731,337 @@
           </div>
         </div>
       </section>
+
+      <!-- RECENTLY VIEWED PRODUCTS SECTION -->
+      <section class="mt-18" aria-labelledby="recently-viewed-title">
+        <div class="wrapper">
+          <div class="flex items-end justify-between">
+            <div class="flex items-center gap-x-6">
+              <div
+                class="flex h-15 w-15 items-center justify-center rounded-[1.6rem] bg-white shadow-[0_18px_45px_rgba(15,23,42,0.06)]"
+                aria-hidden="true"
+              >
+                <span
+                  class="flex h-12 w-12 items-center justify-center text-primary/80"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+
+              <div>
+                <h2
+                  id="recently-viewed-title"
+                  class="text-3xl font-black leading-none text-slate-900"
+                >
+                  آخرین بازدیدها
+                </h2>
+
+                <div
+                  class="mt-3 flex items-center gap-x-1.5"
+                  aria-hidden="true"
+                >
+                  <span class="h-[1px] w-8 bg-primary/80"></span>
+
+                  <span
+                    class="text-[10px] font-extrabold uppercase tracking-[0.3em] text-primary"
+                  >
+                    RECENTLY VIEWED
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white px-8 py-3 text-sm font-black text-gray-900"
+              aria-label="مشاهده تاریخچه کامل آخرین بازدیدها"
+            >
+              <span>مشاهده تاریخچه کامل</span>
+
+              <span
+                class="rounded-md bg-primary/10 p-0.5 text-primary"
+                aria-hidden="true"
+              >
+                <svg
+                  class="h-3.5 w-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Recently viewed product cards -->
+
+          <div class="mt-7 grid grid-cols-4 gap-6">
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/watch-1.png"
+                  alt="اپل واچ اولترا 2"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  اپل واچ اولترا 2
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۳۴,۲۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/laptop-1.png"
+                  alt="مک‌بوک پرو Max M3"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  مک‌بوک پرو Max M3
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۱۴۸,۰۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/mobile-4.png"
+                  alt="آیفون ۱۵ پرو مکس"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  آیفون ۱۵ پرو مکس
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۹۲,۴۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/television-4.png"
+                  alt="پلی استیشن ۵ اسلیم"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  پلی استیشن ۵ اسلیم
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۲۸,۹۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/mobile-4.png"
+                  alt="هدفون سونی WH-1000XM5"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  هدفون سونی WH-1000XM5
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۱۸,۳۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/laptop-3.png"
+                  alt="آیپد پرو ۱۲.۹ اینچ M2"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  آیپد پرو ۱۲.۹ اینچ M2
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۶۴,۷۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/mobile-6.png"
+                  alt="دوربین کانن EOS R50"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  دوربین کانن EOS R50
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۱۵۶,۰۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+            >
+              <div
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+              >
+                <img
+                  src="/src/assets/images/television-3.png"
+                  alt="اسپیکر جی بی ال PartyBox"
+                  class="max-h-18 max-w-20 object-contain"
+                />
+              </div>
+
+              <div class="min-w-0 flex-1 text-right">
+                <h3 class="truncate text-sm font-black text-slate-800">
+                  اسپیکر جی بی ال PartyBox
+                </h3>
+
+                <div class="mt-3 flex items-baseline gap-x-2">
+                  <span class="text-2xl font-black leading-none text-slate-950">
+                    ۲۴,۱۰۰
+                  </span>
+
+                  <span class="text-[10px] font-bold text-slate-400"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="src/js/main.js"></script>
