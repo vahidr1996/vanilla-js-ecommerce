@@ -2790,21 +2790,27 @@
             </div>
 
             <a
+              class="relative overflow-hidden group flex items-center gap-3 px-8 py-3 rounded-2xl bg-white border border-gray-200 text-gray-900 text-sm font-black"
               href="#"
-              class="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white px-8 py-3 text-sm font-black text-gray-900"
-              aria-label="مشاهده تاریخچه کامل آخرین بازدیدها"
             >
-              <span>مشاهده تاریخچه کامل</span>
-
+              <div
+                class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"
+              ></div>
               <span
-                class="rounded-md bg-primary/10 p-0.5 text-primary"
-                aria-hidden="true"
+                class="relative z-10 group-hover:text-white transition-colors duration-500"
+              >
+                مشاهده تاریخچه کامل</span
+              >
+
+              <div
+                class="p-0.5 bg-primary/10 rounded-md relative z-10 group-hover:text-white group-hover:bg-white/20 transition-colors duration-500"
               >
                 <svg
-                  class="h-3.5 w-3.5"
+                  class="w-3.5 h-3.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
                   <path
                     stroke-linecap="round"
@@ -2813,7 +2819,7 @@
                     d="M15 19l-7-7 7-7"
                   ></path>
                 </svg>
-              </span>
+              </div>
             </a>
           </div>
 
@@ -2821,20 +2827,22 @@
 
           <div class="mt-7 grid grid-cols-4 gap-6">
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/watch-1.png"
                   alt="اپل واچ اولترا 2"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   اپل واچ اولترا 2
                 </h3>
 
@@ -2848,23 +2856,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/laptop-1.png"
                   alt="مک‌بوک پرو Max M3"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   مک‌بوک پرو Max M3
                 </h3>
 
@@ -2878,23 +2907,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/mobile-4.png"
                   alt="آیفون ۱۵ پرو مکس"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   آیفون ۱۵ پرو مکس
                 </h3>
 
@@ -2908,23 +2958,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/television-4.png"
                   alt="پلی استیشن ۵ اسلیم"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   پلی استیشن ۵ اسلیم
                 </h3>
 
@@ -2938,23 +3009,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/mobile-4.png"
                   alt="هدفون سونی WH-1000XM5"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   هدفون سونی WH-1000XM5
                 </h3>
 
@@ -2968,23 +3060,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/laptop-3.png"
                   alt="آیپد پرو ۱۲.۹ اینچ M2"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   آیپد پرو ۱۲.۹ اینچ M2
                 </h3>
 
@@ -2998,23 +3111,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/mobile-6.png"
                   alt="دوربین کانن EOS R50"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   دوربین کانن EOS R50
                 </h3>
 
@@ -3028,23 +3162,44 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
 
             <article
-              class="flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)]"
+              class="group relative flex h-34 items-center justify-between gap-x-5 rounded-[2.5rem] border border-gray-200 bg-white px-5 shadow-[0_12px_36px_rgba(15,23,42,0.035)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] cursor-pointer"
             >
               <div
-                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50"
+                class="flex h-25 w-25 shrink-0 items-center justify-center rounded-[1.7rem] border border-slate-100 bg-slate-50 transition-colors duration-500 ease-out group-hover:bg-white"
               >
                 <img
                   src="/src/assets/images/television-3.png"
                   alt="اسپیکر جی بی ال PartyBox"
-                  class="max-h-18 max-w-20 object-contain"
+                  class="max-h-18 max-w-20 object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
 
               <div class="min-w-0 flex-1 text-right">
-                <h3 class="truncate text-sm font-black text-slate-800">
+                <h3
+                  class="truncate text-sm font-black text-slate-800 transition-colors duration-500 ease-out group-hover:text-primary"
+                >
                   اسپیکر جی بی ال PartyBox
                 </h3>
 
@@ -3058,6 +3213,25 @@
                   >
                 </div>
               </div>
+              <button
+                type="button"
+                class="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-x-5 -translate-y-1/2 items-center justify-center rounded-2xl bg-primary text-white opacity-0 shadow-[0_16px_35px_rgba(37,99,235,0.28)] transition-all duration-500 ease-out pointer-events-none group-hover:translate-x-0 group-hover:opacity-100 group-hover:pointer-events-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary group-focus-within:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto cursor-pointer"
+                aria-label="مشاهده محصول"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
             </article>
           </div>
         </div>
